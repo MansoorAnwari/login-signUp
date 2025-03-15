@@ -1,0 +1,127 @@
+/* LoginForm.css */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0a0a0a;
+    padding: 1rem;
+    direction: rtl;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 28rem;
+    background-color: #111827;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.login-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    color: #d1d5db;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+    padding: 0 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #1f2937;
+    border: 2px solid #374151;
+    border-radius: 0.75rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #9ca3af;
+}
+
+.form-input:hover {
+    border-color: #3b82f6;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+}
+
+.error-message {
+    color: #f87171;
+    font-size: 0.875rem;
+    padding: 0 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.02);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.signup-link a {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-bottom: 1px dotted currentColor;
+}
+
+.signup-link a:hover {
+    color: #60a5fa;
+}
+
+@media (min-width: 768px) {
+    .login-form-wrapper {
+        padding: 2rem;
+    }
+
+    .login-title {
+        font-size: 2rem;
+    }
+
+    .form-input {
+        padding: 1.1rem;
+        font-size: 1.05rem;
+    }
+}

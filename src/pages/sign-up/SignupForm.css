@@ -1,0 +1,122 @@
+/* SignupForm.css */
+
+.signup-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    padding: 1rem;
+    direction: rtl;
+}
+
+.signup-form-wrapper {
+    width: 100%;
+    max-width: 28rem;
+    background-color: #111827;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.signup-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    color: #d1d5db;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+    padding: 0 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1rem;
+    background-color: #374151;
+    border: 2px solid #4b5563;
+    border-radius: 0.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: #9ca3af;
+    opacity: 0.8;
+}
+
+.form-input:hover {
+    border-color: #3b82f6;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.875rem;
+    background-color: #2563eb;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.login-link a {
+    color: #d1d5db;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-bottom: 1px dotted;
+}
+
+.login-link a:hover {
+    color: #60a5fa;
+}
+
+@media (min-width: 640px) {
+    .signup-form-wrapper {
+        padding: 2.5rem;
+    }
+
+    .form-input {
+        padding: 1rem;
+    }
+}
