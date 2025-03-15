@@ -17,7 +17,7 @@ const LoginForm = () => {
         initialValues: {email: "", password: ""},
         validationSchema,
         onSubmit: (values, {resetForm}) => {
-            alert("فرم ورود ارسال شد: " + JSON.stringify(values));
+            console.log("فرم ورود ارسال شد: " + JSON.stringify(values));
             resetForm();
         },
     });

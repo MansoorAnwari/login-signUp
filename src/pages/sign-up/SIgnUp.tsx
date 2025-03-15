@@ -29,7 +29,7 @@ const SignupForm = () => {
         },
         validationSchema,
         onSubmit: (values, {resetForm}) => {
-            alert("فرم ثبت نام ارسال شد: " + JSON.stringify(values));
+            console.log("فرم ثبت نام ارسال شد: " + JSON.stringify(values));
             resetForm();
         },
     });
